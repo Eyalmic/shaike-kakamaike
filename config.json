@@ -1,5 +1,5 @@
 {
-  "clueChance": 0.1,
+  "clueChance": 0,
   "steps": {
     "1": "החבאנו מאחורי השירותים רמז סודי לך תראה מה יש שם",
     "2": "תמצא את הברמן עם הזקן ותבקש ממנו את ה'ספיישל של החתן'",
@@ -13,7 +13,17 @@
     {
       "image":"https://c.tenor.com/RVlNBxMbbAYAAAAd/tenor.gif",
       "quote": "יא ג'יחרי"
+    },
+    {
+      "image": "https://c.tenor.com/XsC7ay82lKkAAAAd/tenor.gif",
+      "quote": "יפה לך המשקפי שמש אחי"
+    },
+    {
+      "image": "https://c.tenor.com/u6002ayqdi4AAAAC/tenor.gif",
+      "quote": "בוקר טוב אחי, קח משהו לאכול"
     }
+
+    
   ],
   "backup": [
     {
