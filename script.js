@@ -27,7 +27,7 @@ function getStep(){
 
 function showClue(config, step){
 
-    const clue = config.steps[step]
+    const clue = config.steps[step] || "Clue missing."
 
     document.getElementById("content").innerHTML = `
         <div class="clue">
@@ -41,12 +41,12 @@ function showMeme(config){
     const meme = memes[Math.floor(Math.random() * memes.length)]
 
     document.getElementById("content").innerHTML = `
-        <div class="image-container">
-            <img src="${meme.image}">
-        </div>
-
         <div class="quote">
             ${meme.quote}
+        </div>
+
+        <div class="image-container">
+            <img src="${meme.image}">
         </div>
     `
 }
