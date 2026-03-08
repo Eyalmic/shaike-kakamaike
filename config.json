@@ -7,6 +7,24 @@
   },
   "memes": [
     {
+      "image": "https://c.tenor.com/5HX3lUlGgZsAAAAd/tenor.gif",
+      "quote": "מה חשבת שיצא קולה?"
+    },
+    {
+      "image":"https://c.tenor.com/RVlNBxMbbAYAAAAd/tenor.gif",
+      "quote": "יא ג'יחרי"
+    }
+  ],
+  "backup": [
+    {
+      "image": "https://c.tenor.com/5HX3lUlGgZsAAAAd/tenor.gif",
+      "quote": "מה חשבת שיצא קולה?"
+    },
+    {
+      "image":"https://c.tenor.com/RVlNBxMbbAYAAAAd/tenor.gif",
+      "quote": "יא ג'יחרי"
+    },
+    {
       "image": "https://c.tenor.com/VQj1FfVVTOgAAAAC/tenor.gif",
       "quote": "קפוץ לבריכה"
     },
@@ -28,4 +46,6 @@
     }
   ]
 }
+
+
 
