@@ -30,23 +30,23 @@ function showClue(config, step){
     const clue = config.steps[step]
 
     document.getElementById("content").innerHTML = `
-        <div class="card">
-            <h2>Clue</h2>
-            <p>${clue}</p>
+        <div class="clue">
+            ${clue}
         </div>
     `
 }
-
 function showMeme(config){
 
     const memes = config.memes
-
     const meme = memes[Math.floor(Math.random() * memes.length)]
 
     document.getElementById("content").innerHTML = `
-        <div class="card">
+        <div class="image-container">
             <img src="${meme.image}">
-            <p>${meme.quote}</p>
+        </div>
+
+        <div class="quote">
+            ${meme.quote}
         </div>
     `
 }

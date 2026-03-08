@@ -1,23 +1,51 @@
-body{
-    font-family:system-ui;
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:30px;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #111;
+    color: white;
+    font-family: system-ui, Arial;
 }
 
-.card{
-    background:#1e1e1e;
-    padding:20px;
-    border-radius:12px;
+/* Main layout */
+
+#content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-img{
-    max-width:90%;
-    border-radius:10px;
-    margin-bottom:15px;
+/* Image container */
+
+.image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-h1{
-    margin-bottom:30px;
+/* Image scaling */
+
+.image-container img {
+    max-width: 95vw;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+/* Text area */
+
+.quote {
+    padding: 20px;
+    font-size: 6vw;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* Clue styling */
+
+.clue {
+    padding: 30px;
+    font-size: 7vw;
+    text-align: center;
 }
