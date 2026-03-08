@@ -1,0 +1,31 @@
+{
+  "clueChance": 0.1,
+  "steps": {
+    "1": "החבאנו מאחורי השירותים רמז סודי לך תראה מה יש שם",
+    "2": "תמצא את הברמן עם הזקן ותבקש ממנו את ה'ספיישל של החתן'",
+    "3": "תסתכל מתחת לשולחן פינגפונג"
+  },
+  "memes": [
+    {
+      "image": "https://c.tenor.com/VQj1FfVVTOgAAAAC/tenor.gif",
+      "quote": "קפוץ לבריכה"
+    },
+    {
+      "image": "https://c.tenor.com/zsJQhRLrGoUAAAAd/tenor.gif",
+      "quote": "תרקוד כמו תרנגולת ותעשה רעשים של קוקסיטמבל"
+    },
+    {
+      "image": "https://c.tenor.com/nn7A6kVJyzwAAAAC/tenor.gif",
+      "quote": "תבקש משי פליקה בטוסיק (אם אתה גבר)"
+    },
+    {
+      "image": "https://i.makeagif.com/media/3-13-2024/tj8yU9.gif",
+      "quote": "לך תשיר לשי שיר אהבה מזרחית עם מבטא (תבחר)"
+    },
+    {
+      "image": "https://media.tenor.com/wzfbvcDD9LIAAAAM/sausage-party-dance.gif",
+      "quote": "האוצר האמיתי הוא החברים שהכרנו בדרך 🥺🥺🥺🥺🥺🥺🥺"
+    }
+  ]
+}
+
