@@ -1,25 +1,27 @@
-﻿const SHEET_URL =
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vTmg7-kN-jfhTuVKWkoNlCixPf4-iukEwbSkqwI0n-D1Tr9Wo1kGsEjJ-l8hUz0qk1Bq_9vwwRQUIjv/pub?output=csv"
+﻿const SHEET_ID = "1uKdDpa3K1OxaTgexyih7flEi1Ter8L7XrAEsdeakqfE"
+const SHEET_NAME = "Sheet1"
+
+const SHEET_URL =
+    `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_NAME}&tqx=out:json`
 
 async function loadSheet(){
 
     const res = await fetch(SHEET_URL)
     const text = await res.text()
 
-    const rows = text.split("\n").map(r => r.split(","))
+    const json = JSON.parse(text.substring(47).slice(0,-2))
 
-    const headers = rows[0]
+    const headers = json.table.cols.map(col => col.label)
 
-    const data = rows.slice(1).map(row => {
+    const data = json.table.rows.map(row => {
 
-        let obj = {}
+        const obj = {}
 
-        headers.forEach((h,i)=>{
-            obj[h.trim()] = row[i]
+        headers.forEach((header,i)=>{
+            obj[header] = row.c[i] ? row.c[i].v : ""
         })
 
         return obj
-
     })
 
     return data
