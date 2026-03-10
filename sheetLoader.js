@@ -1,5 +1,5 @@
 ﻿const SHEET_URL =
-    "https://docs.google.com/spreadsheets/d/1uKdDpa3K1OxaTgexyih7flEi1Ter8L7XrAEsdeakqfE/export?format=csv&gid=0"
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vTmg7-kN-jfhTuVKWkoNlCixPf4-iukEwbSkqwI0n-D1Tr9Wo1kGsEjJ-l8hUz0qk1Bq_9vwwRQUIjv/pub?output=csv"
 
 async function loadSheet(){
 
