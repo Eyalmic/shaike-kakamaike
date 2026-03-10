@@ -1,0 +1,16 @@
+﻿<script>
+
+    async function loadStep(){
+
+        const data = await loadSheet()
+
+        const step = data.find(r => r.type==="step" && r.step==="1")
+
+        document.getElementById("content").innerHTML = `
+        <div class="quote">${step.task}</div>
+    `
+    }
+
+    loadStep()
+
+</script>
