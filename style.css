@@ -1,4 +1,3 @@
-/* GLOBAL STYLES */
 html, body {
     margin: 0;
     padding: 0;
@@ -6,16 +5,16 @@ html, body {
     background: black;
     color: white;
     font-family: 'Noto Sans Hebrew', sans-serif;
-    -webkit-font-smoothing: antialiased; /* Smoother text rendering */
 }
 
 #content {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 /* TEXT AREA */
+
 .quote,
 .clue {
     font-weight: 900;
@@ -25,6 +24,7 @@ html, body {
 }
 
 /* IMAGE AREA */
+
 .image-container {
     flex: 1;
     width: 100%;
@@ -35,99 +35,4 @@ html, body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    animation: reveal 0.5s ease;
-}
-
-@keyframes reveal {
-    from {
-        transform: scale(1.05);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-/* BUTTONS CONTAINER */
-.buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px; /* Extra padding for bottom spacing */
-    margin-top: auto;   /* Pushes buttons to bottom if content is sparse */
-}
-
-/* BASE BUTTON STYLES */
-.action-button {
-    /* Shared Layout */
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 160px;
-    padding: 16px 32px;
-    border-radius: 50px; /* Pill shape */
-
-    /* Typography */
-    font-family: inherit; /* Forces Noto Sans Hebrew */
-    font-weight: 700;
-    font-size: 18px;
-    text-decoration: none;
-    text-align: center;
-
-    /* Animation & Polish */
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-    border: 2px solid #ffffff;
-    box-sizing: border-box;
-}
-
-/* PRIMARY (Solid White) */
-.action-button.primary {
-    background: #ffffff;
-    color: #000000;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
-}
-
-.action-button.primary:hover {
-    background: #eeeeee;
-    transform: translateY(-2px);
-}
-
-.action-button.primary:active {
-    transform: scale(0.96);
-    background: #cccccc;
-}
-
-/* SECONDARY (Ghost / Outlined) */
-.action-button.secondary {
-    background: transparent;
-    color: #ffffff;
-}
-
-.action-button.secondary:hover {
-    background: rgba(255, 255, 255, 0.05);
-    transform: translateY(-2px);
-}
-
-.action-button.secondary:active {
-    background: rgba(255, 255, 255, 0.15);
-    transform: scale(0.96);
-}
-
-/* MOBILE RESPONSIVENESS */
-@media (max-width: 480px) {
-    .buttons {
-        flex-direction: column; /* Stacks buttons vertically on small phones */
-        gap: 12px;
-        padding-bottom: 50px; /* Extra room for mobile navigation bars */
-    }
-
-    .action-button {
-        width: 100%; /* Full width buttons for easier thumb-tapping */
-        font-size: 20px;
-        padding: 18px;
-    }
 }
